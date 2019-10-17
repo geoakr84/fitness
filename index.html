@@ -1,0 +1,608 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fitness & Bodybuilding</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+<style>
+#navbar{	
+	bottom:30px;
+	
+}
+
+#navfont{
+	font-size: 20px;
+	font-family: "Franklin Gothic Heavy";
+}
+.article{
+	font-size:12px;
+	font-family: Verdana, Geneva, sans-serif;
+	margin-top: -5px;
+}
+.title{
+	font-size:18px;
+	font-family:"Lato Heavy";
+}
+#box{
+   margin-top:100px;
+   margin-bottom:100px;
+}
+.life{
+	margin-bottom:50px;
+}
+.life tr td{
+	width:310px;	
+}
+.life tr td h4{
+	font-family: "Cooper Black";
+}
+.life tr td p{
+	font-family: Calibri;
+}
+#lifetitle{
+	font-size:50px;
+	font-family: "Franklin Gothic Heavy";
+	margin-bottom:30px;
+	border-left:double #99C;
+	border-bottom:thick double #9999CC;
+	padding-left:10px;
+	border-radius: 5px;
+	box-shadow: 0px 4px #9999CC;
+}
+
+a[ id= "newslink" ]:target ~ #news div.row{
+-webkit-transform: translateY( -500px);
+transform: translateY( -500px );
+}
+
+a[ id= "lifestyle" ]:target ~ #lifetitle div.row{
+-webkit-transform: translateY( -1500px);
+transform: translateY( -1500px );
+}
+</style>
+</head>
+
+<body>
+<!-- Navbar -->
+<div class="w3-container w3-black">
+<div class="container" id="navbar">
+  
+  <div class="w3-bar w3-black w3-card w3-center" id="navfont">
+   <img class="w3-bar-item" src="img/logo.png" style="width:70px;height:60px;">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+   
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-center">HOME</a>
+    <a href="#news" style="transition: all 0.2s linear;" id="newslink" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-center">NEWS</a>
+    <a href="#lifetitle" style="transition: all 1s linear;" id="lifestyle" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-center">LIFESTYLE</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button w3-center" title="Workouts">WORKOUTS <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="exercises.html" class="w3-bar-item w3-button">Exercises</a>
+        <a href="musclegroups.html" class="w3-bar-item w3-button">Muscle Groups</a>
+        <a href="crossfit.html" class="w3-bar-item w3-button">Crossfit</a>
+        <a href="cycling.html" class="w3-bar-item w3-button">Cycling</a>
+      </div>
+    </div>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-center">ABOUT</a>
+    <a href="contact.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-center">CONTACT</a>
+    
+    
+  
+  </div>
+</div>
+
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+   <a href="#news" class="w3-bar-item w3-button w3-padding-large">NEWS</a>
+   <a href="#lifetitle" class="w3-bar-item w3-button w3-padding-large">LIFESTYLE</a>
+   <a href="workouts.html" class="w3-bar-item w3-button w3-padding-large">WORKOUTS</a>
+   <a href="about.html" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+   <a href="contact.php" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+</div>
+
+ <header class="w3-display-container w3-content w3-wide" style="max-width:2500px;max-height:844px;">
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+  <img src="img/banner.jpg" style="width:100%;height:auto;max-width:2500px;max-height:844px;opacity:0.8;">
+    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+       <h2 style="font-family: 'Franklin Gothic Heavy'">FIND YOUR </h2>
+       <h2 style="font-family: 'Franklin Gothic Heavy'">MORE INTO </h2>
+       <h2 style="font-family: 'Franklin Gothic Heavy'">HEALTH & FITNESS</h2>
+       <br>
+      <p class="w3-text-deep-orange"><b>Discover how to create yourself, train better, to stay motivated and feel great.</b></p>   
+    </div>
+  </div>
+   <div class="mySlides w3-display-container w3-center">
+   <img src="img/banner2.jpg" style="width:100%;height:auto;max-width:2500px;max-height:844px;opacity:0.8;">
+     <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+       <h2 style="font-family: 'Franklin Gothic Heavy'">WORKOUT</h2>
+       <h2 style="font-family: 'Franklin Gothic Heavy'">ANYWHERE </h2>
+       <h2 style="font-family: 'Franklin Gothic Heavy'">ANYTIME</h2>
+       <br>
+      <p class="w3-text-lime"><b>Stay motivated, determined, and always push to the limit</b></p>   
+     </div>
+   </div>
+   <div class="mySlides w3-display-container w3-center">
+   <img src="img/banner3.jpg" style="width:100%;height:auto;max-width:2500px;max-height:844px;opacity:0.8;">
+     <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+       <h2 style="font-family: 'Franklin Gothic Heavy'" class="w3-text-amber">YOU'VE GOT </h2>
+       <h2 style="font-family: 'Franklin Gothic Heavy'"><span class="w3-text-amber">THE</span> POWER </h2>
+      
+       <br>
+      <p><b>Make your dreams a reality</b></p>   
+     </div>
+   </div>
+  </header>
+ 
+</div> <!-- end of container -->
+
+<div class="container w3-padding-64 w3-light-grey" id="box">
+    <div id="news" class="w3-panel w3-border-left w3-border-bottom w3-border-dark-grey w3-round w3-leftbar"><h3 style="font-size:34px;font-family: 'Cooper Black'">Latest Fitness News</h3></div>
+    
+    <div class="row">
+    <div class="col-sm-12">
+    <div class="w3-display-container">
+    <img src="img/10tips.jpg" style="width:100%;height:auto;max-width:1000px;">
+    <div class="w3-display-bottomleft" id="embedtext">
+       <p>
+       <a href="#" style="text-decoration:none;"><span class="w3-text-white w3-hover-text-blue w3-margin-left" style="max-width:700px;font-size:36px;font-family: 'Franklin Gothic Heavy'">10 Tips to Extend Your Running Life</span></a>
+       <br>
+       <span style="max-width:580px;font-family: 'Calisto MT';font-size:17px;" class="w3-margin-left w3-text-white">Age and injury can't stop you if you follow these 10 laws.</span>
+       <br>
+       <span style="font-family:'Cambria Math';" class="w3-margin-left w3-text-white"><b>BY AMBY BURFOOT</b></span>
+       </p>
+    </div> <!-- end of w3-display-bottomleft -->
+    </div> <!-- end of w3-display-container -->
+    
+    
+    </div> <!-- end of col-sm-12 -->
+    
+    </div> <!-- end of row -->
+    
+	<div class="row">
+    	<div class="col-sm-6 w3-light-grey">
+        <table class="w3-table">
+        <tr>
+        <td class="w3-padding-24">
+        <img src="img/balance.jpg" style="width:100px;height:70px;">
+        </td>
+        <td>
+       
+         <a href="#" style="text-decoration:none"><h4 class="w3-text-blue w3-hover-text-indigo title">7 Exercises to Improve Balance</h4></a>
+         <p class="article">Need to take your workout to the next level? These seven moves will build muscle, strengthen your core and improve agility.
+         </p>
+         </td>
+         </tr>
+         </table>
+        </div>
+        <div class="col-sm-6 w3-light-grey">
+        <table class="w3-table">
+        <tr>
+        <td class="w3-padding-24">
+        <img src="img/womenrunners.jpg" style="width:100px;height:70px;">
+        </td>
+        <td>
+       
+         <a href="#" style="text-decoration:none"><h4 class="w3-text-blue w3-hover-text-indigo title">What Women Runners Need to Know About Their Bodies</h4></a>
+         <p class="article">Sure, we got that talk back in middle school. But the miles we log affects our bodies differently than men.
+         </p>
+         </td>
+         </tr>
+         </table>
+        </div>
+    </div> <!-- end of row -->
+    
+    <div class="row">
+    	<div class="col-sm-6 w3-light-grey">
+        <table class="w3-table">
+        <tr>
+        <td class="w3-padding-24">
+        <img src="img/heartrate.jpg" style="width:100px;height:70px;">
+        </td>
+        <td>
+       
+         <a href="#" style="text-decoration:none"><h4 class="w3-text-blue w3-hover-text-indigo title">Should Runners Train by Heart Rate?</h4></a>
+         <p class="article">By using heart rate to train, this runner found that to get faster, she had to slow down.
+         </p>
+         </td>
+         </tr>
+         </table>
+        </div>
+        <div class="col-sm-6 w3-light-grey">
+        <table class="w3-table">
+        <tr>
+        <td class="w3-padding-24">
+        <img src="img/5tips.jpg" style="width:100px;height:70px;">
+        </td>
+        <td>
+       
+         <a href="#" style="text-decoration:none"><h4 class="w3-text-blue w3-hover-text-indigo title">5 Tips to Speed Up Your Metabolism</h4></a>
+         <p class="article">Here's a secret: slaving away inside your body - right this minute - is your very own personal trainer working tirelessly to help you burn calories and shed fat...</p>
+         </td>
+         </tr>
+         </table>
+        </div>
+    </div> <!-- end of row -->
+    <a href="fitness.html" class="w3-right">See more...</a>
+</div> <!-- end of container -->
+
+<div class="container w3-padding-64 w3-light-grey" id="box">
+    <div class="w3-panel w3-border-left w3-border-bottom w3-border-dark-grey w3-round w3-leftbar"><h3 style="font-size:34px;font-family: 'Cooper Black'">Latest Health News</h3></div>
+    
+    <div class="row">
+    <div class="col-sm-12">
+    <div class="w3-display-container">
+    <img src="img/city.jpg" style="width:100%;height:auto;max-width:1000px;opacity:0.9;">
+    <div class="w3-display-bottomleft" id="embedtext">
+       <p>
+       <a href="#" style="text-decoration:none;"><span class="w3-text-white w3-hover-text-blue w3-margin-left" style="max-width:700px;font-size:36px;font-family: 'Franklin Gothic Heavy'">The Fattest Cities in the U.S.</span></a>
+       <br>
+       <span style="max-width:580px;font-family: 'Calisto MT';font-size:17px;color: #FFF" class="w3-margin-left">Of the 100 most populated U.S. cities, these 10 zip codes have the highest percentage of overweight residents.</span>
+       <br>
+       <span style="font-family:'Cambria Math';color: #FFF" class="w3-margin-left"><b>BY ACTIVE.com</b></span>
+       </p>
+    </div> <!-- end of w3-display-bottomleft -->
+    </div> <!-- end of w3-display-container -->
+    
+    
+    </div> <!-- end of col-sm-12 -->
+    
+    </div> <!-- end of row --> 
+	<div class="row">
+    	<div class="col-sm-6 w3-light-grey">
+        
+        <table class="w3-table">
+        <tr>
+        <td class="w3-padding-24">
+        <img src="img/injuries.jpg" style="width:100px;height:70px;">
+        </td>
+        <td>
+       
+         <a href="#" style="text-decoration:none"><h4 class="w3-text-blue w3-hover-text-indigo title">10 Most Common Gym Injuries (and How to Prevent Them)</h4></a>
+         <p class="article">Don’t let these painful workout injuries keep you from training. Learn how to stop them before they even start.
+         </p>
+         </td>
+         </tr>
+         </table>
+        </div>
+        <div class="col-sm-6 w3-light-grey">
+        <table class="w3-table">
+        <tr>
+        <td class="w3-padding-24">
+        <img src="img/hamstring.jpg" style="width:100px;height:70px;">
+        </td>
+        <td>
+          <a href="#" style="text-decoration:none"><h4 class="w3-text-blue w3-hover-text-indigo title">How to Recover From a Hamstring Strain</h4></a>
+          <p class="article">Don't let a hamstring strain keep you on the couch for weeks. Try these two exercises to get back on your feet quickly.</p>
+          </td>
+         </tr>
+         </table>
+        </div>
+    </div> <!-- end of row -->
+    
+    <div class="row">
+    	<div class="col-sm-6 w3-light-grey">
+        
+        <table class="w3-table">
+        <tr>
+        <td class="w3-padding-24">
+        <img src="img/conquer.jpg" style="width:100px;height:70px;">
+        </td>
+        <td>
+       
+         <a href="#" style="text-decoration:none"><h4 class="w3-text-blue w3-hover-text-indigo title">3 Ways to Conquer IT Band Pain</h4></a>
+         <p class="article">Get on top of IT band pain as soon as you feel it. These easy at-home remedies can help you avoid a more serious injury.
+         </p>
+         </td>
+         </tr>
+         </table>
+        </div>
+        <div class="col-sm-6 w3-light-grey">
+        <table class="w3-table">
+        <tr>
+        <td class="w3-padding-24">
+        <img src="img/runner.jpg" style="width:100px;height:70px;">
+        </td>
+        <td>
+          <a href="#" style="text-decoration:none"><h4 class="w3-text-blue w3-hover-text-indigo title">9 Running Injury Prevention Tips</h4></a>
+          <p class="article">Running injury prevention can be simple with a few key steps. Keep these tips in mind to stay healthy all season.</p>
+          </td>
+         </tr>
+         </table>
+        </div>
+    </div> <!-- end of row -->
+    
+    <a href="fitness.html" class="w3-right">See more...</a>
+</div> <!-- end of container -->
+
+<div class="container w3-padding-64 w3-light-grey" id="box">
+    <div class="w3-panel w3-border-left w3-border-bottom w3-border-dark-grey w3-round w3-leftbar"><h3 style="font-size:34px;font-family: 'Cooper Black'">Latest Nutrition News</h3></div>  
+    
+    <div class="row">
+    <div class="col-sm-12">
+    <div class="w3-display-container">
+    <img src="img/myth.jpg" style="width:100%;height:auto;max-width:1000px;">
+    <div class="w3-display-bottomleft" id="embedtext">
+       <p>
+       <a href="#" style="text-decoration:none;"><span class="w3-text-white w3-hover-text-blue w3-margin-left" style="max-width:700px;font-size:36px;font-family: 'Franklin Gothic Heavy'">The 10 Nutrition Myths You Need to Stop Believing</span></a>
+       <br>
+       <span style="max-width:580px;font-family: 'Calisto MT';font-size:17px;color: #FFF" class="w3-margin-left">These healthy habits might not be so healthy after all. It’s time to separate fact from fiction.</span>
+       <br>
+       <span style="font-family:'Cambria Math';color: #FFF" class="w3-margin-left"><b>BY JILL WEISENBERGER</b></span>
+       </p>
+    </div> <!-- end of w3-display-bottomleft -->
+    </div> <!-- end of w3-display-container -->
+    
+    
+    </div> <!-- end of col-sm-12 -->
+    
+    </div> <!-- end of row -->  
+
+	<div class="row">
+    	<div class="col-sm-6 w3-light-grey">
+        
+        <table class="w3-table">
+        <tr>
+        <td class="w3-padding-24">
+        <img src="img/hydration.jpg" style="width:100px;height:70px;">
+        </td>
+        <td>
+       
+         <a href="#" style="text-decoration:none"><h4 class="w3-text-blue w3-hover-text-indigo title">Proper Hydration: How Much is Enough?</h4></a>
+         <p class="article">While hydration is important, it's easy to over-do it in the summer months, leading to overhydration. Learn how to track your water needs and prepare before a race so you get just what your body needs. 
+         </p>
+         </td>
+         </tr>
+         </table>
+        </div>
+        <div class="col-sm-6 w3-light-grey">
+        <table class="w3-table">
+        <tr>
+        <td class="w3-padding-24">
+        <img src="img/racemeal.jpg" style="width:100px;height:70px;">
+        </td>
+        <td>
+          <a href="#" style="text-decoration:none"><h4 class="w3-text-blue w3-hover-text-indigo title">The Pre-Race Meal</h4></a>
+          <p class="article">No meal is more important than the one before a race. Eating the right meal at the right time ensures that all your hard training doesn't go to waste.</p>
+          </td>
+         </tr>
+         </table>
+        </div>
+    </div> <!-- end of row -->
+    
+    <div class="row">
+    	<div class="col-sm-6 w3-light-grey">
+        
+        <table class="w3-table">
+        <tr>
+        <td class="w3-padding-24">
+        <img src="img/eatrunning.jpg" style="width:100px;height:70px;">
+        </td>
+        <td>
+       
+         <a href="#" style="text-decoration:none"><h4 class="w3-text-blue w3-hover-text-indigo title">What to Eat Before a 10K</h4></a>
+         <p class="article">Don't get caught up in training runs and forget about what you're putting in your body. Here's what to eat before a 10K for your best performance. 
+         </p>
+         </td>
+         </tr>
+         </table>
+        </div>
+        <div class="col-sm-6 w3-light-grey">
+        <table class="w3-table">
+        <tr>
+        <td class="w3-padding-24">
+        <img src="img/alcohol.jpeg" style="width:100px;height:70px;">
+        </td>
+        <td>
+          <a href="#" style="text-decoration:none"><h4 class="w3-text-blue w3-hover-text-indigo title">How Does Alcohol Negatively Affect Your Fitness?</h4></a>
+          <p class="article">Alcohol does affect your fitness and overall health, and it's important to know what it does to your body.</p>
+          </td>
+         </tr>
+         </table>
+        </div>
+    </div> <!-- end of row -->
+    <a href="fitness.html" class="w3-right">See more...</a>
+    <p></p>
+</div> <!-- end of container -->
+
+<div class="container">
+  <div id="lifetitle">Lifestyle</div>
+  
+  <div class="row">
+  <div class="col-sm-4">
+    <table class="life">
+    <tr>
+    <td>
+  	<img src="img/strongwill.jpg" width="300" height="200">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <a href="#" style="text-decoration:none"><h4>How to Increase Your Willpower Without Really Even Trying</h4></a>
+    <p>Increasing your willpower doesn’t require soul searching. In fact, it’s much simpler and easier than you probably think…</p>
+    </td>
+    </tr>
+    </table>
+    
+  </div>
+  
+  <div class="col-sm-4">
+   <table class="life">
+    <tr>
+    <td>
+   <img src="img/perfect.jpg" width="300" height="200">
+   </td>
+    </tr>
+    <tr>
+    <td>
+    <a href="#" style="text-decoration:none"><h4>Stop Waiting for Perfect (or Suffer the Consequences)</h4></a>
+   <p>Think of something in your life you’d like to improve. Just one thing that you’d like to add, change, or remove…</p>
+    </td>
+    </tr>
+    </table>
+  </div>
+  
+  <div class="col-sm-4">
+    <table class="life">
+    <tr>
+    <td>
+    <img src="img/excuse.jpg" width="300" height="200">
+    </td>
+    </tr>
+    <tr>
+    <td>
+     <a href="#" style="text-decoration:none"><h4>Excuses or Progress: Choose One</h4></a>
+    <p>Everyday you have a choice. You can make excuses or you can make progress. Which one will you choose?</p>
+    </td>
+    </tr>
+    </table>
+  </div>
+  
+  </div> <!-- end of row -->
+  
+  <div class="row">
+  	<div class="col-sm-4">
+    <table class="life">
+    <tr>
+    <td>
+    <img src="img/shirts.jpg" width="300" height="200">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <a href="#" style="text-decoration:none"><h4>5 Cool Dress Shirts That You Won’t Sweat Through</h4></a>
+    <p>Keep your temperature in check and say goodbye to pit stains</p>
+    </td>
+    </tr>
+    </table>
+    </div>
+    
+    <div class="col-sm-4">
+    <table class="life">
+    <tr>
+    <td>
+    <img src="img/mothergift.jpg" width="300" height="200">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <a href="#" style="text-decoration:none"><h4>33 Mother's Day Gifts That'll Make You Mom's Favorite Kid</h4></a>
+    <p>Because you love your mom. And your mom loves cool presents. Easy as that.</p>
+    </td>
+    </tr>
+    </table>
+    </div>
+    
+    <div class="col-sm-4">
+    <table class="life">
+    <tr>
+    <td>
+    <img src="img/military.jpg" width="300" height="200">
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <a href="#" style="text-decoration:none"><h4>9 Military-Inspired Items You Need to Add to Your Wardrobe Right Now</h4></a>
+    <p>Arm yourself with combat boots, cargo pants, aviator sunglasses, and more</p>
+    </td>
+    </tr>
+    </table>
+    </div>
+  
+  </div> <!-- end of row -->
+  
+
+</div> <!-- end of container -->
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-blue-grey w3-xlarge" style="width:100%;height:450px;">
+   <div class="w3-content w3-padding-64">
+   <h3>Powered by George Akritidis</h3>
+    <a target="_blank" href="https://www.facebook.com/george.akritidis.79">
+    <i id="gl" class="fa fa-facebook-official" style="font-size:36px;" data-toggle="tooltip" title="Facebook"></i>
+    </a>
+    <a href="https://twitter.com/geoakr84" target="_blank">
+    <i id="gl" class="fa fa-twitter-square" style="font-size:36px" data-toggle="tooltip" title="Twitter"></i>
+    </a>
+    <a  href="https://www.instagram.com/geoakr84/" target="_blank">
+    <i id="gl" class="fa fa-instagram" style="font-size:36px" data-toggle="tooltip" title="Instagram"></i>
+    </a>
+    <a href="https://www.flickr.com/photos/145257136@N06/" target="_blank">
+      <i id="gl" class="fa fa-flickr" style="font-size:36px" data-toggle="tooltip" title="Flickr"></i>
+    </a>
+    <i id="gl" class="fa fa-skype" style="font-size:36px;color:#3377ff" data-toggle="modal" data-target="#myModal" onmouseover="this.style.cursor='pointer'"></i>
+    </div> <!-- end of w3-content -->
+</footer>
+
+<!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+         <h4 class="modal-title">Skype Personal Info</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>         
+        </div>
+        <div class="modal-body">
+          <p>If you want to communicate through skype, my username is <b>geoakr84</b>.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div> <!-- end of modal -->
+
+<script>
+window.onscroll = function() {toggleFunction()};
+
+function toggleFunction(){
+	var navbar = document.getElementById("navfont");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+	
+	
+}
+
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 6000);    
+}
+
+</script>
+</body>
+</html>
